@@ -1,0 +1,53 @@
+import { StyleSheet} from 'react-native';
+import colors from '../../components/common/colors';
+
+const style = (width,height) => StyleSheet.create({
+  container: {
+    height: height,
+    flex: 1,
+  },
+  topBg: {
+    width: width,
+    height: height * 0.2,
+    resizeMode: 'cover',
+  },
+  ScrollView: {
+    flex: 1,
+    backgroundColor: colors.white_lvl_1,
+    marginTop: -width * 0.1,
+    borderTopRightRadius: width * 0.05,
+    borderTopLeftRadius: width * 0.05,
+    overflow: 'hidden',
+    padding: width * 0.03,
+  },
+  logo: {
+    width: width * 0.3,
+    height: height * 0.1,
+    resizeMode: 'stretch',
+  },
+  loginText: {
+    fontFamily: 'Poppins-SemiBold',
+    fontSize: 23,
+    color: colors.steel,
+  },
+  createNew: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    textAlign: 'center',
+    marginVertical: width * 0.03,
+  },
+  footer: {
+    padding: 15,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: colors.secondaryGreen,
+  },
+  errorText : {
+    color : colors.error,
+    fontFamily: 'Poppins-Regular',
+  },
+  
+  
+});
+
+export default style;
